@@ -33,4 +33,3 @@ if uploaded_file:
             file_name=f"page{page_num + 1}.jpg",
             mime="image/jpeg"
         )
-﻿
