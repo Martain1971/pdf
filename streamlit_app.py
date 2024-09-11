@@ -3,7 +3,7 @@ import fitz  # PyMuPDF
 from PIL import Image
 import io
 
-#PDF 파일 업로드
+# PDF 파일 업로드
 st.title("PDF to JPG Converter")
 uploadedfile = st.file_uploader("Upload a PDF file", type="pdf")
 
