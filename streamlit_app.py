@@ -7,9 +7,9 @@ import io
 st.title("PDF to JPG Converter")
 uploadedfile = st.file_uploader("Upload a PDF file", type="pdf")
 
-if uploaded_file:
+if uploadedfile:
     # PDF 파일 열기
-    pdf_document = fitz.open(stream=uploaded_file.read(), filetype="pdf")
+    pdf_document = fitz.open(stream=uploadedfile.read(), filetype="pdf")
 
     # 각 페이지를 순회하며 JPG로 변환
     for page_num in range(pdf_document.page_count):
